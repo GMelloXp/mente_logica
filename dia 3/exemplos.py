@@ -17,3 +17,11 @@ chovendo = False
 nao_chovendo = not chovendo
 print("Está chovendo? ", chovendo)
 print("Não está chovendo? ", nao_chovendo)
+
+#analisando se um número é par
+
+numero = int(input("Digite um número inteiro: "))
+resto_divisão = numero % 2 
+verificacao = resto_divisão == 0
+
+print("O número digitado é par? ", verificacao)
