@@ -39,3 +39,39 @@ elif operacao == "/":
         print("Erro: divisão por 0!!!")
 else:
   print("Operação não reconhecida!")
+
+
+# Classificação de Idade
+# Crie um programa que classifica a idade de uma pessoa em:
+# ● Criança: 0 a 12 anos
+# ● Adolescente: 13 a 17 anos
+# ● Adulto: 18 a 59 anos
+# ● Idoso: 60 anos ou mais
+
+idade = int(input("Digite sua idade: "))
+
+if idade >= 0 and idade <= 12:
+    print("Você é uma criança")
+elif idade <= 17:
+    print("Você é um Adolescente")
+elif idade < 60:
+    print("Você é um adulto")
+elif idade >= 60:
+    print("Você é um idoso")
+else:
+  print("Idade iválida!")
+
+# 4. Verificando Ano Bissexto
+# Crie um programa que verifica se um ano é bissexto.
+# ● Um ano é bissexto se for divisível por 4.
+# ● Mas não é bissexto se for divisível por 100, exceto se for divisível por 400
+
+ano = int(input("Digite um ano: "))
+
+if (ano % 4 == 0 and ano % 100 != 0) or ano % 400 == 0:
+    print("O ano é bissexto")
+else:
+    print("O ano não é bissexto")
+    
+
+
