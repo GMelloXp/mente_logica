@@ -74,4 +74,50 @@ else:
     print("O ano não é bissexto")
     
 
+# Simulador de Caixa Eletrônico
+# Crie um programa que simula um caixa eletrônico. O usuário deve informar o valor do saque
+# (apenas valores inteiros) e o programa deve informar quantas cédulas de cada valor serão
+# fornecidas.
+# ● Considere cédulas de R$100, R$50, R$20, R$10, R$5 e R$2.
+
+valor_saque = int(input("Digite o valor a ser sacado: R$"))
+
+if valor_saque <= 0:
+    print("Valor indisponível!")
+else: 
+    qtd_cedulas_100 = valor_saque // 100 
+    valor_saque %= 100
+    
+    qtd_cedulas_50 = valor_saque // 50 
+    valor_saque %= 50 
+    
+    qtd_cedulas_20 = valor_saque // 20 
+    valor_saque %= 20 
+    
+    qtd_cedulas_10 = valor_saque // 10 
+    valor_saque %= 10 
+    
+    qtd_cedulas_5 = valor_saque // 5 
+    valor_saque %= 5 
+    
+    qtd_cedulas_2 = valor_saque // 2
+    valor_saque %= 2
+    
+    if valor_saque != 0:
+        print("Esse valo não pode ser sacado com as cédulas disponíveis!")
+    else:
+        print("Cédulas entregues: ")
+        if qtd_cedulas_100 > 0:
+            print(f"{qtd_cedulas_100} x R$100,00")
+        if qtd_cedulas_50 > 0:
+            print(f"{qtd_cedulas_50} x R$50,00")
+        if qtd_cedulas_20 >0:
+            print(f"{qtd_cedulas_20} x R$20,00")
+        if qtd_cedulas_10 > 0:
+            print(f"{qtd_cedulas_10} x R$10,00")
+        if qtd_cedulas_5 > 0:
+            print(f"{qtd_cedulas_5} x R$5,00")
+        if qtd_cedulas_2 > 0:
+            print(f"{qtd_cedulas_2} x R$2,00")
+
 
